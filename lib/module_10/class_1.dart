@@ -118,6 +118,10 @@ class Module_11_class_1 extends StatelessWidget {
                       BoxShadow(
                         color: Colors.black.withOpacity(0.1),
                         offset: Offset(4, 10)
+                      ),
+                      BoxShadow(
+                          color: Colors.blue.withOpacity(0.1),
+                          offset: Offset(-10, -10)
                       )
                     ]
                   ),
