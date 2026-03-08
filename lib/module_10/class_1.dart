@@ -103,6 +103,28 @@ class Module_11_class_1 extends StatelessWidget {
                       },
                       child: Text("Submit")),
                 ),
+                SizedBox(height: 30,),
+
+                Container(
+                  alignment: Alignment.center,
+                  decoration: BoxDecoration(
+                    color: Colors.green,
+                    borderRadius: BorderRadius.circular(20),
+                    border: Border.all(
+                      width: 1,
+                      color: Colors.black,
+                    ),
+                    boxShadow: [
+                      BoxShadow(
+                        color: Colors.black.withOpacity(0.1),
+                        offset: Offset(4, 10)
+                      )
+                    ]
+                  ),
+                  height: 50,
+                  width: 300,
+                  child: Text("This is a container"),
+                )
               ],
             ),
           )
