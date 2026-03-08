@@ -23,6 +23,9 @@ class Module_11_class_1 extends StatelessWidget {
                     fontSize: 20,
                     color: Colors.red,
                   ),
+
+                  prefixIcon: Icon(Icons.phone),
+                  suffixIcon: Icon(Icons.check)
                 ),
               )
             ],
