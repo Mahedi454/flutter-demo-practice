@@ -5,7 +5,7 @@ class Module_10_class_2 extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final _formkey = GlobalKey<FormFieldState>();
+    final _formkey = GlobalKey<FormState>();
     TextEditingController email = TextEditingController();
     TextEditingController password = TextEditingController();
     return Scaffold(
@@ -54,18 +54,43 @@ class Module_10_class_2 extends StatelessWidget {
                   hintText: "Enter your email",
                   labelText: "Email",
                   border: OutlineInputBorder(),
+                  prefixIcon: Icon(Icons.email,
+                    color: Colors.red[600],
+                  ),
+                  suffixIcon: Icon(Icons.check,
+                  color: Colors.green),
                 ),
+                validator: (value) {
+                  if (value == null || value.isEmpty) {
+                    return "Please enter your email";
+                  }
+                  return null;
+                },
               ),
               SizedBox(
                 height: 20,
               ),
               TextFormField(
                 controller: password,
+                obscureText: true,
                 decoration: InputDecoration(
                   hintText: "Enter your password",
                   labelText: "Password",
                   border: OutlineInputBorder(),
+                  prefixIcon: Icon(Icons.lock,
+                  color: Colors.redAccent,),
+                  suffixIcon: Icon(Icons.remove_red_eye,
+                  color: Colors.blueAccent,),
                 ),
+
+                validator: (value) {
+                  if (value == null || value.isEmpty) {
+                    return "Please enter your password";
+                  }else if (value.length < 6) {
+                    return "Password must be at least 6 characters";
+                  }
+                  return null;
+                },
               ),
               SizedBox(
                 height: 20,
@@ -77,7 +102,13 @@ class Module_10_class_2 extends StatelessWidget {
                     backgroundColor: Colors.purple,
                     foregroundColor: Colors.white
                   ),
-                    onPressed: () {},
+                    onPressed: () {
+                    if(_formkey.currentState!.validate()) {
+                      ScaffoldMessenger.of(context).showSnackBar(
+                          SnackBar(content: Text("Login successful"))
+                      );
+                    }
+                    },
                     child: Text("Login")),
               )],
           ),
