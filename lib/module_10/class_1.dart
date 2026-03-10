@@ -1,14 +1,14 @@
 import 'package:flutter/material.dart';
 
-class Module_11_class_1 extends StatelessWidget {
-  const Module_11_class_1({super.key});
+class Module_10_class_1 extends StatelessWidget {
+  const Module_10_class_1({super.key});
 
   @override
   Widget build(BuildContext context) {
     TextEditingController phoneController = TextEditingController();
     TextEditingController passwordController = TextEditingController();
     return Scaffold(
-      body: SafeArea(
+      body: SafeArea( // SafeArea is a widget that adds padding to the top and bottom of the screen to avoid the notch and the home indicator on iOS devices.
           child: Padding(
             padding: const EdgeInsets.all(10.0),
             child: Column(
