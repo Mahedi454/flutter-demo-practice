@@ -16,11 +16,11 @@ class M_10_Class_3 extends StatelessWidget {
         title: Text("Responsive"),
         backgroundColor: Colors.blue,
       ),
+
       body: Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-
           orientation == Orientation.portrait ? Column(
               children: [
                 Container(
@@ -68,7 +68,6 @@ class M_10_Class_3 extends StatelessWidget {
               ),
             ],
           ),
-
           ],
         ),
       )

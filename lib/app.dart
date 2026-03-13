@@ -13,7 +13,24 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       title: 'Flutter Demo',
-      home: M_10_Class_3()
+      home: Module_10_class_2(),
+      theme: ThemeData(
+        brightness: Brightness.dark,
+        primaryColor: Colors.deepOrange,
+        primarySwatch: Colors.deepOrange,
+
+        scaffoldBackgroundColor: Colors.blue.shade50,
+
+        elevatedButtonTheme: ElevatedButtonThemeData(
+          style: ElevatedButton.styleFrom(
+            backgroundColor: Colors.blue,
+            foregroundColor: Colors.deepOrange,
+            shape: RoundedRectangleBorder(
+              borderRadius: BorderRadius.circular(8),
+            )
+      ),
+      ),
+      ),
     );
     
   }

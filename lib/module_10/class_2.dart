@@ -98,10 +98,6 @@ class Module_10_class_2 extends StatelessWidget {
               SizedBox(
                 width: 300,
                 child: ElevatedButton(
-                  style: ElevatedButton.styleFrom(
-                    backgroundColor: Colors.purple,
-                    foregroundColor: Colors.white
-                  ),
                     onPressed: () {
                     if(_formkey.currentState!.validate()) {
                       ScaffoldMessenger.of(context).showSnackBar(
