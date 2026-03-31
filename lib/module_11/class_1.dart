@@ -14,66 +14,77 @@ class M_11_Class_1 extends StatelessWidget {
       ),
       body: ListView(
         children: [
-          ListTile(
-            title: Text('Mahedi Hasan', style: TextStyle(
-              color: Colors.black,
-            ),),
-            subtitle: Text('01768857058', style: TextStyle(
-              color: Colors.blueGrey,
-            ),),
-            leading: Icon(Icons.phone, color: Colors.green),
-            trailing: Icon(Icons.delete, color: Colors.red),
+          Card(
+            color: Colors.blue.shade50,
+            elevation: 5,
+            child: ListTile(
+              title: Text('Mahedi Hasan', style: TextStyle(
+                color: Colors.black,
+              ),),
+              subtitle: Text('01768857058', style: TextStyle(
+                color: Colors.blueGrey,
+              ),),
+              leading: Icon(Icons.phone, color: Colors.green),
+              trailing: Icon(Icons.delete, color: Colors.red),
+            ),
           ),
-          ListTile(
-            title: Text('Mahedi Hasan', style: TextStyle(
-              color: Colors.black,
-            ),),
-            subtitle: Text('01768857058', style: TextStyle(
-              color: Colors.blueGrey,
-            ),),
-            leading: Icon(Icons.phone, color: Colors.green),
-            trailing: Icon(Icons.delete, color: Colors.red),
+          Card(
+            color: Colors.blue.shade50,
+            elevation: 5,
+            child: ListTile(
+              title: Text('Mahedi Hasan', style: TextStyle(
+                color: Colors.black,
+              ),),
+              subtitle: Text('01768857058', style: TextStyle(
+                color: Colors.blueGrey,
+              ),),
+              leading: Icon(Icons.phone, color: Colors.green),
+              trailing: Icon(Icons.delete, color: Colors.red),
+            ),
           ),
-          ListTile(
-            title: Text('Mahedi Hasan', style: TextStyle(
-              color: Colors.black,
-            ),),
-            subtitle: Text('01768857058', style: TextStyle(
-              color: Colors.blueGrey,
-            ),),
-            leading: Icon(Icons.phone, color: Colors.green),
-            trailing: Icon(Icons.delete, color: Colors.red),
+          Card(
+            color: Colors.blue.shade50,
+            elevation: 5,
+            child: ListTile(
+              title: Text('Mahedi Hasan', style: TextStyle(
+                color: Colors.black,
+              ),),
+              subtitle: Text('01768857058', style: TextStyle(
+                color: Colors.blueGrey,
+              ),),
+              leading: Icon(Icons.phone, color: Colors.green),
+              trailing: Icon(Icons.delete, color: Colors.red),
+            ),
           ),
-          ListTile(
-            title: Text('Mahedi Hasan', style: TextStyle(
-              color: Colors.black,
-            ),),
-            subtitle: Text('01768857058', style: TextStyle(
-              color: Colors.blueGrey,
-            ),),
-            leading: Icon(Icons.phone, color: Colors.green),
-            trailing: Icon(Icons.delete, color: Colors.red),
+          Card(
+            color: Colors.blue.shade50,
+            elevation: 5,
+            child: ListTile(
+              title: Text('Mahedi Hasan', style: TextStyle(
+                color: Colors.black,
+              ),),
+              subtitle: Text('01768857058', style: TextStyle(
+                color: Colors.blueGrey,
+              ),),
+              leading: Icon(Icons.phone, color: Colors.green),
+              trailing: Icon(Icons.delete, color: Colors.red),
+            ),
           ),
-          ListTile(
-            title: Text('Mahedi Hasan', style: TextStyle(
-              color: Colors.black,
-            ),),
-            subtitle: Text('01768857058', style: TextStyle(
-              color: Colors.blueGrey,
-            ),),
-            leading: Icon(Icons.phone, color: Colors.green),
-            trailing: Icon(Icons.delete, color: Colors.red),
+          Card(
+            color: Colors.blue.shade50,
+            elevation: 5,
+            child: ListTile(
+              title: Text('Mahedi Hasan', style: TextStyle(
+                color: Colors.black,
+              ),),
+              subtitle: Text('01768857058', style: TextStyle(
+                color: Colors.blueGrey,
+              ),),
+              leading: Icon(Icons.phone, color: Colors.green),
+              trailing: Icon(Icons.delete, color: Colors.red),
+            ),
           ),
-          ListTile(
-            title: Text('Mahedi Hasan', style: TextStyle(
-              color: Colors.black,
-            ),),
-            subtitle: Text('01768857058', style: TextStyle(
-              color: Colors.blueGrey,
-            ),),
-            leading: Icon(Icons.phone, color: Colors.green),
-            trailing: Icon(Icons.delete, color: Colors.red),
-          ),
+
         ],
       ),
     );
