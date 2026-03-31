@@ -12,13 +12,14 @@ class M_11_Class_1 extends StatelessWidget {
         centerTitle: true,
         backgroundColor: Colors.blue,
       ),
-      body: ListView(
-        children: [
-          Card(
+      body: ListView.builder(
+        itemCount: 20,
+          itemBuilder: (context, index){
+          return Card(
             color: Colors.blue.shade50,
             elevation: 5,
             child: ListTile(
-              title: Text('Mahedi Hasan', style: TextStyle(
+              title: Text('Mahedi Hasan $index', style: TextStyle(
                 color: Colors.black,
               ),),
               subtitle: Text('01768857058', style: TextStyle(
@@ -27,66 +28,140 @@ class M_11_Class_1 extends StatelessWidget {
               leading: Icon(Icons.phone, color: Colors.green),
               trailing: Icon(Icons.delete, color: Colors.red),
             ),
-          ),
-          Card(
-            color: Colors.blue.shade50,
-            elevation: 5,
-            child: ListTile(
-              title: Text('Mahedi Hasan', style: TextStyle(
-                color: Colors.black,
-              ),),
-              subtitle: Text('01768857058', style: TextStyle(
-                color: Colors.blueGrey,
-              ),),
-              leading: Icon(Icons.phone, color: Colors.green),
-              trailing: Icon(Icons.delete, color: Colors.red),
-            ),
-          ),
-          Card(
-            color: Colors.blue.shade50,
-            elevation: 5,
-            child: ListTile(
-              title: Text('Mahedi Hasan', style: TextStyle(
-                color: Colors.black,
-              ),),
-              subtitle: Text('01768857058', style: TextStyle(
-                color: Colors.blueGrey,
-              ),),
-              leading: Icon(Icons.phone, color: Colors.green),
-              trailing: Icon(Icons.delete, color: Colors.red),
-            ),
-          ),
-          Card(
-            color: Colors.blue.shade50,
-            elevation: 5,
-            child: ListTile(
-              title: Text('Mahedi Hasan', style: TextStyle(
-                color: Colors.black,
-              ),),
-              subtitle: Text('01768857058', style: TextStyle(
-                color: Colors.blueGrey,
-              ),),
-              leading: Icon(Icons.phone, color: Colors.green),
-              trailing: Icon(Icons.delete, color: Colors.red),
-            ),
-          ),
-          Card(
-            color: Colors.blue.shade50,
-            elevation: 5,
-            child: ListTile(
-              title: Text('Mahedi Hasan', style: TextStyle(
-                color: Colors.black,
-              ),),
-              subtitle: Text('01768857058', style: TextStyle(
-                color: Colors.blueGrey,
-              ),),
-              leading: Icon(Icons.phone, color: Colors.green),
-              trailing: Icon(Icons.delete, color: Colors.red),
-            ),
-          ),
-
-        ],
+          );
+          }
       ),
+
+
+
+
+
+      // ListView(
+      //   children: [
+      //     Card(
+      //       color: Colors.blue.shade50,
+      //       elevation: 5,
+      //       child: ListTile(
+      //         title: Text('Mahedi Hasan', style: TextStyle(
+      //           color: Colors.black,
+      //         ),),
+      //         subtitle: Text('01768857058', style: TextStyle(
+      //           color: Colors.blueGrey,
+      //         ),),
+      //         leading: Icon(Icons.phone, color: Colors.green),
+      //         trailing: Icon(Icons.delete, color: Colors.red),
+      //       ),
+      //     ),
+      //     Card(
+      //       color: Colors.blue.shade50,
+      //       elevation: 5,
+      //       child: ListTile(
+      //         title: Text('Mahedi Hasan', style: TextStyle(
+      //           color: Colors.black,
+      //         ),),
+      //         subtitle: Text('01768857058', style: TextStyle(
+      //           color: Colors.blueGrey,
+      //         ),),
+      //         leading: Icon(Icons.phone, color: Colors.green),
+      //         trailing: Icon(Icons.delete, color: Colors.red),
+      //       ),
+      //     ),
+      //     Card(
+      //       color: Colors.blue.shade50,
+      //       elevation: 5,
+      //       child: ListTile(
+      //         title: Text('Mahedi Hasan', style: TextStyle(
+      //           color: Colors.black,
+      //         ),),
+      //         subtitle: Text('01768857058', style: TextStyle(
+      //           color: Colors.blueGrey,
+      //         ),),
+      //         leading: Icon(Icons.phone, color: Colors.green),
+      //         trailing: Icon(Icons.delete, color: Colors.red),
+      //       ),
+      //     ),
+      //     Card(
+      //       color: Colors.blue.shade50,
+      //       elevation: 5,
+      //       child: ListTile(
+      //         title: Text('Mahedi Hasan', style: TextStyle(
+      //           color: Colors.black,
+      //         ),),
+      //         subtitle: Text('01768857058', style: TextStyle(
+      //           color: Colors.blueGrey,
+      //         ),),
+      //         leading: Icon(Icons.phone, color: Colors.green),
+      //         trailing: Icon(Icons.delete, color: Colors.red),
+      //       ),
+      //     ),
+      //     Card(
+      //       color: Colors.blue.shade50,
+      //       elevation: 5,
+      //       child: ListTile(
+      //         title: Text('Mahedi Hasan', style: TextStyle(
+      //           color: Colors.black,
+      //         ),),
+      //         subtitle: Text('01768857058', style: TextStyle(
+      //           color: Colors.blueGrey,
+      //         ),),
+      //         leading: Icon(Icons.phone, color: Colors.green),
+      //         trailing: Icon(Icons.delete, color: Colors.red),
+      //       ),
+      //     ),
+      //     Card(
+      //       color: Colors.blue.shade50,
+      //       child: ListTile(
+      //         title: Text('Mahedi Hasan', style: TextStyle(
+      //           color: Colors.black,
+      //         ),),
+      //         subtitle: Text('01768857058', style: TextStyle(
+      //           color: Colors.blueGrey,
+      //         ),),
+      //         leading: Icon(Icons.phone, color: Colors.green),
+      //         trailing: Icon(Icons.delete, color: Colors.red),
+      //       ),
+      //     ),
+      //     Card(
+      //       color: Colors.blue.shade50,
+      //       child: ListTile(
+      //         title: Text('Mahedi Hasan', style: TextStyle(
+      //           color: Colors.black,
+      //         ),),
+      //         subtitle: Text('01768857058', style: TextStyle(
+      //           color: Colors.blueGrey,
+      //         ),),
+      //         leading: Icon(Icons.phone, color: Colors.green),
+      //         trailing: Icon(Icons.delete, color: Colors.red),
+      //       ),
+      //     ),
+      //     Card(
+      //       color: Colors.blue.shade50,
+      //       child: ListTile(
+      //         title: Text('Mahedi Hasan', style: TextStyle(
+      //           color: Colors.black,
+      //         ),),
+      //         subtitle: Text('01768857058', style: TextStyle(
+      //           color: Colors.blueGrey,
+      //         ),),
+      //         leading: Icon(Icons.phone, color: Colors.green),
+      //         trailing: Icon(Icons.delete, color: Colors.red),
+      //       ),
+      //     ),
+      //     Card(
+      //       color: Colors.blue.shade50,
+      //       child: ListTile(
+      //         title: Text('Mahedi Hasan', style: TextStyle(
+      //           color: Colors.black,
+      //         ),),
+      //         subtitle: Text('01768857058', style: TextStyle(
+      //           color: Colors.blueGrey,
+      //         ),),
+      //         leading: Icon(Icons.phone, color: Colors.green),
+      //         trailing: Icon(Icons.delete, color: Colors.red),
+      //       ),
+      //     ),
+      //   ],
+      // ),
     );
   }
 }
