@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 class M_10_Class_3 extends StatelessWidget {
   const M_10_Class_3({super.key});
@@ -16,61 +17,75 @@ class M_10_Class_3 extends StatelessWidget {
         title: Text("Responsive"),
         backgroundColor: Colors.blue,
       ),
-
       body: Center(
-        child: Column(
+        child: orientation == Orientation.portrait
+            ? Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-          orientation == Orientation.portrait ? Column(
-              children: [
-                Container(
-                  height: 150,
-                  width: 300,
-                  color: Colors.red,
-                ),
-                Text("Mahedi Hasan",
-                  style: TextStyle(
-                    fontSize: 25,
-                  ),
-                ),
-                Container(
-                  height: screenHeight * 0.2,
-                  width: screenWidth * 0.6,
-                  color: Colors.green,
-                ),
-                Text("Shihab",
-                  style: TextStyle(
-                    fontSize: 25,
-                  ),
-                ),
-              ],
-            ) : Row(
+            Container(
+              height: 150.h,
+              width: 300.w,
+              color: Colors.red,
+            ),
+            SizedBox(height: 10.h),
+            Text(
+              "Mahedi Hasan",
+              style: TextStyle(fontSize: 25.sp),
+            ),
+            SizedBox(height: 10.h),
+            Container(
+              height: 150.h,
+              width: 300.w,
+              color: Colors.green,
+            ),
+            SizedBox(height: 10.h),
+            Text(
+              "Shihab",
+              style: TextStyle(fontSize: 25.sp),
+            ),
+          ],
+        )
+            : Padding(
+          padding: EdgeInsets.all(10.w),
+          child: Row(
             children: [
               Container(
-                height: 150,
-                width: 300,
+                height: 150.h,
+                width: 150.w,
                 color: Colors.red,
               ),
-              Text("Mahedi Hasan",
-                style: TextStyle(
-                  fontSize: 25,
+
+              SizedBox(width: 10.w),
+
+              Expanded(
+                child: Text(
+                  "Mahedi Hasan",
+                  style: TextStyle(fontSize: 20.sp),
+                  overflow: TextOverflow.ellipsis,
                 ),
               ),
+
+              SizedBox(width: 10.w),
+
               Container(
                 height: screenHeight * 0.2,
-                width: screenWidth * 0.6,
+                width: 150.w,
                 color: Colors.green,
               ),
-              Text("Shihab",
-                style: TextStyle(
-                  fontSize: 25,
+
+              SizedBox(width: 10.w),
+
+              Expanded(
+                child: Text(
+                  "Shihab",
+                  style: TextStyle(fontSize: 20.sp),
+                  overflow: TextOverflow.ellipsis,
                 ),
               ),
             ],
           ),
-          ],
         ),
-      )
+      ),
     );
   }
 }
