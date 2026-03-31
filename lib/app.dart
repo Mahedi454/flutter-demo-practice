@@ -24,37 +24,45 @@ class MyApp extends StatelessWidget {
           title: 'Flutter Demo',
           home: M_11_Class_1(),
           theme: ThemeData(
-            useMaterial3: true, // ✅ modern touch
+            useMaterial3: true,
 
             brightness: Brightness.dark,
 
             primaryColor: Colors.deepOrange,
             primarySwatch: Colors.deepOrange,
 
-            scaffoldBackgroundColor: Colors.white,
+            scaffoldBackgroundColor: Colors.blue.shade50,
+
+            // ✅ ADD THIS (Text colors)
+            textTheme: TextTheme(
+              bodyLarge: TextStyle(
+                color: Colors.black, // default text color
+                fontSize: 16,
+              ),
+              bodyMedium: TextStyle(
+                color: Colors.black,
+              ),
+              titleLarge: TextStyle(
+                color: Colors.black,
+                fontSize: 20,
+                fontWeight: FontWeight.bold,
+              ),
+            ),
 
             appBarTheme: const AppBarTheme(
               elevation: 0,
               centerTitle: true,
+              foregroundColor: Colors.white, // AppBar text/icon color
             ),
 
             elevatedButtonTheme: ElevatedButtonThemeData(
               style: ElevatedButton.styleFrom(
-                backgroundColor: Colors.deepOrange, // 🔥 primary color
-                foregroundColor: Colors.white, // better contrast
+                backgroundColor: Colors.deepOrange,
+                foregroundColor: Colors.white, // button text color
                 padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 12),
                 shape: RoundedRectangleBorder(
-                  borderRadius: BorderRadius.circular(12), // more modern
+                  borderRadius: BorderRadius.circular(12),
                 ),
-                elevation: 2,
-              ),
-            ),
-
-            textTheme: const TextTheme(
-              bodyLarge: TextStyle(fontSize: 16),
-              titleLarge: TextStyle(
-                fontSize: 20,
-                fontWeight: FontWeight.bold,
               ),
             ),
           ),
