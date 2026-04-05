@@ -8,6 +8,7 @@ import 'package:my_project/module_11/M_11_Class_2.dart';
 import 'package:my_project/module_9/class_3.dart';
 
 import 'module_11/GridV.dart';
+import 'module_11/M_11_Class_3.dart';
 import 'module_11/class_1.dart';
 
 class MyApp extends StatelessWidget {
@@ -24,11 +25,11 @@ class MyApp extends StatelessWidget {
         return MaterialApp(
           debugShowCheckedModeBanner: false,
           title: 'Flutter Demo',
-          home: M11Class2(),
+          home: Alert(),
           theme: ThemeData(
             useMaterial3: true,
 
-            brightness: Brightness.dark,
+            brightness: Brightness.light,
 
             primaryColor: Colors.deepOrange,
             primarySwatch: Colors.deepOrange,
@@ -52,6 +53,7 @@ class MyApp extends StatelessWidget {
             ),
 
             appBarTheme: const AppBarTheme(
+              backgroundColor: Colors.blue,
               elevation: 0,
               centerTitle: true,
               foregroundColor: Colors.white, // AppBar text/icon color
@@ -59,7 +61,7 @@ class MyApp extends StatelessWidget {
 
             elevatedButtonTheme: ElevatedButtonThemeData(
               style: ElevatedButton.styleFrom(
-                backgroundColor: Colors.deepOrange,
+                backgroundColor: Colors.blue,
                 foregroundColor: Colors.white, // button text color
                 padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 12),
                 shape: RoundedRectangleBorder(
