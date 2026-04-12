@@ -23,6 +23,15 @@ class Page1 extends StatelessWidget {
             ElevatedButton(onPressed: () {
               Navigator.push(context, MaterialPageRoute(builder: (context) => Page3(name: 'Shihab',)));
             }, child: Text('Go to Page 3')),
+            
+            Divider(),
+            ElevatedButton(onPressed: () {
+              Navigator.pushNamed(context, '/page2', arguments: 'Mahedi Hasan');
+            }, child: Text('Navi 2.0 Page 2')),
+            SizedBox(height: 30),
+            ElevatedButton(onPressed: () {
+              Navigator.pushNamedAndRemoveUntil(context, '/page2', (route) => false, arguments: 'Mahedi Hasan');
+            }, child: Text('Navi 2.0 Page 2 with Remove Until'))
           ],
         ),
       ),
