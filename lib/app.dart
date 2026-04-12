@@ -7,6 +7,7 @@ import 'package:my_project/module_10/class_3.dart';
 import 'package:my_project/module_11/M_11_Class_2.dart';
 import 'package:my_project/module_9/class_3.dart';
 
+import 'Module_12/navi/page1.dart';
 import 'module_11/GridV.dart';
 import 'module_11/M_11_Class_3.dart';
 import 'module_11/class_1.dart';
@@ -25,7 +26,7 @@ class MyApp extends StatelessWidget {
         return MaterialApp(
           debugShowCheckedModeBanner: false,
           title: 'Flutter Demo',
-          home: Alert(),
+          home: Page1(),
           theme: ThemeData(
             useMaterial3: true,
 
