@@ -14,6 +14,7 @@ import 'Module_12/navi/page2.dart';
 import 'Module_12/navi/page3.dart';
 import 'Module_13/class_1.dart';
 import 'Module_13/class_2.dart';
+import 'Module_13/class_3.dart';
 import 'module_11/GridV.dart';
 import 'module_11/M_11_Class_3.dart';
 import 'module_11/class_1.dart';
@@ -30,7 +31,7 @@ class MyApp extends StatelessWidget {
       // Use builder only if you need to use library outside ScreenUtilInit context
       builder: (_, child) {
         return MaterialApp(
-          initialRoute: '/Module13_Class2',
+          initialRoute: '/BottomNav',
           routes: {
             '/home': (context) => Home(),
             '/class1': (context) => Module_10_class_1(),
@@ -46,6 +47,7 @@ class MyApp extends StatelessWidget {
             '/Module12Class3': (context) => Module12Class3(),
             '/Module13Class1': (context) => Module13Class1(),
             '/Module13class2': (context) => Module13class2(),
+            '/BottomNav': (context) => BottomNav(),
 
           },
           debugShowCheckedModeBanner: false,
