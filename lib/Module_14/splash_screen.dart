@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
-
-import '../Module_13/class_1.dart';
+import 'package:my_project/Module_14/responsiveUI.dart';
 
 class SplashScreen extends StatefulWidget {
   const SplashScreen({super.key});
@@ -21,7 +20,7 @@ class _SplashScreenState extends State<SplashScreen> {
 
   void navigateNextPage(){
     Future.delayed(Duration(seconds: 3),(){
-      Navigator.pushReplacement(context, MaterialPageRoute(builder: (context)=>Module13Class1()));
+      Navigator.pushReplacement(context, MaterialPageRoute(builder: (context)=>ResponsiveUi()));
 
     });
 
@@ -35,7 +34,7 @@ class _SplashScreenState extends State<SplashScreen> {
         height: double.infinity,
         width: double.infinity,
         color: Colors.deepPurple,
-        child: Image.network("https://www.svgrepo.com/show/303123/bmw-logo.svg"),
+        child: Image.network("https://www.svgrepo.com/show/303123/bmw-logo.svg", width: 20,),
       ),
     );
   }
